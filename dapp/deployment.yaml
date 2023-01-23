@@ -21,3 +21,5 @@ spec:
         image: ghcr.io/planktron/dapp:latest
         ports:
         - containerPort: 8080        
+      imagePullSecrets:
+      - name: planktron-test-dapp
