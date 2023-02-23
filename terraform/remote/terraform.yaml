@@ -1,0 +1,15 @@
+apiVersion: tf.upbound.io/v1beta1
+kind: Workspace
+metadata:
+  name: crossplane-terraform-remote-test
+  annotations:
+    crossplane.io/external-name: test
+spec:
+  forProvider:
+    source: Remote
+    module: git::https://github.com/jonathanschmitto2b/apps/terraform/test?ref=main
+  providerConfigRef:
+    name: my-aws-provider-config
+  writeConnectionSecretToRef:
+    namespace: teste-jonathan
+    name: crossplane-terraform-remote-test
