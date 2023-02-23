@@ -25,6 +25,8 @@ spec:
       output "hello_world" {
         value = "hey hey ya, ${var.subject}!"
       }
+  providerConfigRef:
+    name: my-aws-provider-config
   writeConnectionSecretToRef:
     namespace: teste-jonathan
     name: crossplane-terraform-inline-test
