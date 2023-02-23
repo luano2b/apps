@@ -23,7 +23,7 @@ spec:
       }
 
       output "hello_world" {
-        value = "hey hey ya, ${var.subject}!"
+        value = "hey hey ya 123, ${var.subject}!"
       }
   providerConfigRef:
     name: my-aws-provider-config
