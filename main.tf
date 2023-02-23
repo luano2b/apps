@@ -7,5 +7,5 @@ variable "subject" {
    description = "Subject to hello"
 }
 output "hello_world" {
-  value = "hey hey ya test main.tf, ${var.subject}!"
+  value = "hey hey ya test main.tf 99999999, ${var.subject}!"
 }
