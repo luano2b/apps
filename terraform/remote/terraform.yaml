@@ -7,7 +7,7 @@ metadata:
 spec:
   forProvider:
     source: Remote
-    module: git::https://github.com/jonathanschmitto2b/apps-private.git//test?ref=main
+    module: git::https://github.com/jonathanschmitto2b/apps-private.git/test?ref=main
   providerConfigRef:
     name: my-aws-provider-config
   writeConnectionSecretToRef:
